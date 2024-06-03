@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/mica" mode="merge"/>
+    <filter root="/content/mica" mode="merge"/>
+    <filter root="/content/dam/mica" mode="merge">
+        <exclude pattern="/content/dam/mica(/.*)?"/>
+        <include pattern="/content/dam/mica/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/mica/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/mica" mode="merge"/>
+</workspaceFilter>

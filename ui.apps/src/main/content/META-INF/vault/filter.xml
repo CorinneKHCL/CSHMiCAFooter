@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/mica/clientlibs"/>
+    <filter root="/apps/mica/components"/>
+    <filter root="/apps/mica/i18n"/>
+</workspaceFilter>

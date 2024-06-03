@@ -1,0 +1,29 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+  
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+  
+        http://www.apache.org/licenses/LICENSE-2.0
+  
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+<div class="cmp-imagelink" data-sly-use.imagelink="org.commonspirit.mica.core.models.ImageLinkList" 
+data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html" data-cmp-data-layer="${imagelink.data.json}">
+    <div data-sly-test="${imagelink.selectionType == 'links'}" data-sly-list.link="${imagelink.linkObjects}" class="cmp-imagelink__list">
+        <ul class="cmp-imagelink__links">
+            <li class="cmp-imagelink__link" data-cmp-data-layer="${link.data.json}"><a href="${link.linkPath}" data-cmp-clickable="${link.data ? true : false}">${link.linkText}</a></li>
+        </ul>
+    </div>
+    <div data-sly-test="${imagelink.selectionType == 'images'}" data-sly-list.image="${imagelink.getImageObjects}" class="cmp-imagelink__list">
+        <ul class="cmp-imagelink__images">
+            <li class="cmp-imagelink__image" data-cmp-data-layer="${image.data.json}"><a href="${image.imagePath}" data-cmp-clickable="${image.data ? true : false}"><img src="${image.image}"/></a></li>
+        </ul>
+    </div>
+   </div>
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=false}"></sly>

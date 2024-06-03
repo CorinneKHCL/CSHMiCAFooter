@@ -1,0 +1,38 @@
+{
+    "imageList": {
+        "jcr:primaryType": "nt:unstructured",
+        "selectionType":"images",
+        "sling:resourceType": "mica/components/imagelinklist",
+        "images": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "image": "/content/apps/link1",
+                "imagePath": "path1"
+            },
+            "item1": {
+                "jcr:primaryType": "nt:unstructured",
+                "image": "/content/apps/link2",
+                "imagePath": "path2"
+            }
+        }
+    },
+    "linkList": {
+        "jcr:primaryType": "nt:unstructured",
+        "selectionType": "links",
+        "sling:resourceType": "mica/components/imagelinklist",
+        "links": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "linkPath": "/content/apps/link1",
+                "linkText": "Link 1"
+            },
+            "item1": {
+                "jcr:primaryType": "nt:unstructured",
+                "linkPath": "/content/apps/link2",
+                "linkText": "Link 2"
+            }
+        }
+    }
+}
